@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Esse link abaixo referencia o arquivo de css 'style.css' onde estão todas a estilizações da aplicação -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- O link abaixo, é uma referência da biblioteca html2pdf, que nos ajuda a gerar o arquivo em pdf -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Gerador de PDF</title>
+  </head>
+  <body>
+    <div class="content">
+      <label for="text">Insira seu texto</label>
+      <input id="text" type="text" />
+      <!-- No botão abaixo, ao clica-lo ele executa nossa função que gera o donwload do pdf do nosso conteúdo -->
+      <button onclick="gerarPDF()">Download em Pdf</button>
+    </div>
+    
+    <!-- Aqui é chamado o script "main.js" que é o javascript que guarda nossa função de gerar o pfd -->
+    <script src="main.js"></script>
+  </body>
+</html>
